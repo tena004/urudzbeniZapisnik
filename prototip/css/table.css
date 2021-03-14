@@ -1,0 +1,50 @@
+html,
+body {
+  height: 100%;
+}
+.container {
+  position: relative;
+  top: 20%;
+  padding-bottom: 50px;
+  margin: auto;
+  float:none;
+}
+table {
+  width: 800px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: auto;
+
+}
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: aliceblue;
+}
+th {
+  text-align: left;
+}
+thead th {
+  background-color: #443ace94;
+}
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+tbody td {
+  position: relative;
+  background-color: #1f72aa91;
+  color:aliceblue;
+  font-weight: 100;
+}
+tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}

@@ -1,0 +1,265 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+
+body{
+    height: 100%;
+}
+body {
+	margin: 0;
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+input{
+  background-color:rgba(255, 255, 255, 0.822);
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    font-weight: 100;
+}
+a:hover, a:focus, a:hover{
+    color: #413aaa;
+    cursor: pointer;
+}
+
+a.link{
+  color: #953bac;
+  text-decoration: underline;
+  
+}
+
+a.link:hover{
+  color: #17B794;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+img{
+  height: 200px;
+  border-radius: 10px;
+
+}
+
+
+
+.cms{
+    padding: 0;
+    margin: 0;
+    background-color: aliceblue;
+    font-family: "Droid Sans", Arial, sans-serif;
+  }
+
+  .form{
+    position: relative;
+    z-index: 1;
+    background: #170f8b91;
+    opacity: 99%;
+    max-width: 400px;
+    margin: 200px auto 100px;
+    padding: 10px 45px 30px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+  }
+  
+  .form p{
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    color:aliceblue;
+  }
+
+  .home-form{
+    position: relative;
+    z-index: 1;
+    background: #170f8b91;
+    opacity: 99%;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px 45px 30px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+
+  }
+
+  .home-form p{
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    color:aliceblue;
+
+  }
+
+  .home-form input{
+    outline: 0;
+    border-radius: 10px;
+    width: 50%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    cursor: pointer;
+    background-color:aliceblue;
+    }
+
+  .home-form input:hover{
+    background-color: rgb(172, 175, 212);
+    transition: all 1s ease 0s;
+    color:aliceblue;
+    cursor: pointer;
+    }
+  
+  .home-form input:focus{
+    background-color:rgb(172, 175, 212);
+    transition: all 1s ease 0s;
+    color:aliceblue;
+    cursor: pointer;
+    }
+
+  textarea{
+    width: 600px;
+    padding: 10px;
+    margin: 30px;
+    font-family: "Droid Sans", Arial, sans-serif;
+    font-size: 15px;
+
+  }
+
+  label{
+    color:aliceblue;
+    font-size: 20px;
+  }
+
+  h1{
+    font-size: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    color:#443acee1;
+    padding-top: 20px;
+    border-radius: 10px 10px 0px 0px;
+    background: aliceblue;
+    text-align: center;
+    margin: auto;
+    width: 800px;
+  }
+  
+
+
+  
+  .form input{
+    outline: 0;
+    border-radius: 10px;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    cursor: pointer;
+    background-color:aliceblue;
+  }
+  
+  .form input:hover{
+    background-color: rgb(172, 175, 212);
+    transition: all 1s ease 0s;
+    color:aliceblue;
+    cursor: pointer;
+  }
+
+  .form input:focus{
+    background-color: rgb(172, 175, 212);
+    transition: all 1s ease 0s;
+    color:aliceblue;
+    cursor: pointer;
+  }
+
+  .form button{
+      text-transform: uppercase;
+      outline: 0;
+      border-radius: 10px;
+      background:#2217b7e1;
+      width: 100%;
+      border: 0;
+      padding: 15px;
+      margin: 5px;
+      color: aliceblue;
+      font-size: 14px;
+      cursor: pointer;
+  }
+
+  .gtco-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 15vh;
+    position: relative;
+    width: 100%;
+    z-index: 1001;
+    background-color: rgba(255, 255, 255, 0.822);
+    
+  }
+
+  .gtco-nav ul{
+      list-style: none;
+  }
+
+
+  .logo{
+    width: auto;
+    font-size: 40px;
+    text-align: center;
+    color: #443acee1;
+  
+  }
+  button{
+      color:aliceblue;
+      background-color: #443acee1;
+      text-transform: uppercase;
+      outline: 0;
+      border-radius: 10px;
+      padding: 15px;
+      font-size: 14px;
+      cursor: pointer;
+  }
+
+  button:hover, .form button:active, .form button:focus{
+    background-color: #635bdae1;
+    transition: all 1s ease 0s;
+}
+
+  
+
+  .form button:hover, .form button:active, .form button:focus{
+      background-color: #443acee1;
+      transition: all 1s ease 0s;
+  }
+
+
+.cms .form-home button{
+    text-transform: uppercase;
+    outline: 0;
+    border-radius: 10px;
+    background: #953bac;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: antiquewhite;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cms .form-home button:hover, .form button:active, .form button:focus{
+  background-color: #ab72b9;
+  transition: all 1s ease 0s;
+}
+
+
+
+  
