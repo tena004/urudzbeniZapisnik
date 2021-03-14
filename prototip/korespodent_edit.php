@@ -24,6 +24,12 @@ if(isset($_POST['insert']))
     if($data[5]==''){
         $data[5]='Hrvatska';
     }
+     while($row2=mysqli_fetch_assoc($result2)){
+        if($row2["naziv"]==$data[1]){
+            die('Korespodent s tim nazivom već postoji!<br><br><a href="home1.php">Natrag</a>');
+        }
+    }
+    
     $insert_Query = "INSERT INTO korespodenti(naziv, ulica_broj, postanski_broj, grad, drzava) VALUES ('$data[1]','$data[2]','$data[3]','$data[4]','$data[5]');";
     try{
         $insert_Result = mysqli_query($conn, $insert_Query);
