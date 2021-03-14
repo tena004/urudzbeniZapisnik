@@ -19,6 +19,12 @@ function getPosts()
 if(isset($_POST['insert']))
 {
     $data = getPosts();
+    while($row=mysqli_fetch_assoc($result)){
+        if($row["username"]==$data[2]){
+            die('Korisničko ime već postoji!<br><br><a href="home2.php">Natrag</a>');
+        }
+    }
+    
     $insert_Query = "INSERT INTO prijava(ime_prezime, username, pwd) VALUES ('$data[1]','$data[2]','$data[3]');";
     try{
         $insert_Result = mysqli_query($conn, $insert_Query);
@@ -67,6 +73,12 @@ if(isset($_POST['delete']))
 if(isset($_POST['submit']))
 {
     $data = getPosts();
+    while($row=mysqli_fetch_assoc($result)){
+        if($row["username"]==$data[2]){
+            die('Korisničko ime već postoji!<br><br><a href="home2.php">Natrag</a>');
+        }
+    }
+    
     $update_Query = "UPDATE prijava SET ime_prezime='$data[1]', username='$data[2]', pwd='$data[3]' WHERE id='$data[0]';";
     try{
         $update_Result = mysqli_query($conn, $update_Query);
